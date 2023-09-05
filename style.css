@@ -1,4 +1,23 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 
 .grid-container {
     display: grid;
@@ -12,6 +31,11 @@
 .grid-item {    
     min-height: 150px;
     background-color: rgb(89, 89, 192);
+}
+
+.grid-item .logo .menu{    
+    height: 75px;
+
 }
 
 .logo {
@@ -64,8 +88,37 @@ background-color: beige;
   .logo img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    
+    /* object-fit: contain; */
+     
+  }
+
+
+.topnav {
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #14113b;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
   }
 
 
@@ -85,11 +138,13 @@ background-color: beige;
     }
      .aside {
         grid-column: 3 / 4;
-    } 
-    .logo img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    
-    }
-}
+
+  }
+  .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+     
+  }
+
+     }
